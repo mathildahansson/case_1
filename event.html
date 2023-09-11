@@ -28,7 +28,36 @@
 
     <!-- SIDINNEHÅLL -->
 
-    <h1>Anmäl dig till sälsafari!</h1>
+    <h2>Sälsafari i Västerviks skärgård</h2>
+
+    <img src="images/seal.jpeg" alt="Säl i vattnet, bildens upphovsperson: Daniel Johansson" width="100%">
+    <br>
+    <i><b>Foto:</b> &copy; Daniel Johansson - "Säl i vattnet"</i>
+
+    <hr>
+
+    <i>
+        "Bara en halvtimmes båtfärd från Västerviks centrum väntar ytterskärgården. Här härskar örn och säl.
+        Havsytan
+        bryts av kobbar och skär som är utmärkta viloplatser för gråsäl. Du får möta de tre meter långa och 200-300
+        kilo
+        tunga bjässarna och titta djupt i deras milda, bruna ögon. Högt över horisonten svävar havsörnen i cirklar.
+        Den
+        är vår största örn, med ett vingspann på 2,5 meter."
+    </i>
+
+    <br><br>
+
+    <b>Läs mer på om sälsafari:</b>
+    <a href="https://www.visitsmaland.se/sv/upplevelser/natur-och-aventyr/orn-o-salsafari">Visit Småland's
+        hemsida</a>
+
+    <hr>
+
+
+
+
+    <h3>Anmäl dig till sälsafari!</h3>
 
     <!-- "method get" ska undvikas, men kan användas för att testa applikationer -->
     <form action="#" method="get">
@@ -36,7 +65,7 @@
 
 
         <fieldset>
-            <legend>Personuppgifter</legend>
+            <legend>Anmälningsformulär</legend>
             <!-- FÖRNAMN -->
             <p>
                 <label for="firstname">Förnamn:</label>
@@ -61,11 +90,8 @@
                     <input type="email" name="email" id="email" required> *
                 </label>
             </p>
-        </fieldset>
 
-
-        <fieldset>
-            <legend>Upplysningar och säkerhet</legend>
+            <!-- CHECKBOX -->
             <b>Har du grundläggande simkunskap?</b>
             <div>
                 <input type="checkbox" name="yes" id="yes">
@@ -78,17 +104,18 @@
 
 
             <p>
-                Övriga upplysningar inför båtturen:
+                <b>Övriga upplysningar inför båtturen:</b>
                 <br>
                 <textarea name="letter" id="letter" cols="30" rows="10"></textarea>
             </p>
 
 
             <p>
-                Klicka i vilken storlek på flytväst du önskar låna.
+                <b>Klicka i vilken storlek på flytväst du önskar låna.</b>
                 <br>
                 <i>(Har du egen flytväst behöver du inte klicka i något alternativ)</i>
                 <br>
+                <!-- LISTA PÅ VAL -->
                 <select name="size" id="size" multiple size="6">
                     <option value="x-small">X-small</option>
                     <option value="small">Small</option>
@@ -98,38 +125,37 @@
                     <option value="xx-large">Xx-large</option>
                 </select>
             </p>
+
+            <!-- RANGE INPUT -->
+            <div>
+                <label for="range"><b>Hur taggad är du på sälsafari?</b></label>
+                <br>
+                <input type="range" name="range" id="range">
+            </div>
+
+
+            <!-- GODKÄNNANDE AV BEHANDLING AV PERSONUPPGIFTER -->
+            <p>
+                <label for="checkbok">Jag godkänner att mina personuppgifter behandlas</label>
+                <input type="checkbox" name="checkbox" id="checkbox">
+            </p>
+
+            <!-- SKICKA-KNAPP -->
+            <input type="submit" value="Skicka">
+
+            <!-- NOLLSTÄLL KNAPP -->
+            <input type="reset" value="Nollställ">
+
         </fieldset>
-
-
-        <!-- GODKÄNNANDE AV BEHANDLING AV PERSONUPPGIFTER -->
-        <p>
-            <label for="checkbok">Jag godkänner att mina personuppgifter behandlas</label>
-            <input type="checkbox" name="checkbox" id="checkbox">
-        </p>
-
-        <!-- SKICKA-KNAPP -->
-        <input type="submit" value="Skicka">
-        <input type="reset" value="Nollställ">
-
-
-
-
     </form>
 
+    <!-- FOOTER -->
 
-    <!-- Sidan ska innehålla en presentation av ett evenemang av ngt slag 
-            (ett event, en festival, konsert, resa mm). Den här sidan ska också innehålla ett 
-            formulär där man kan anmäla sitt intresse för att delta | medverka i evenemanget. 
-            I formuläret ska man kunna ange namn, e-post samt innehåll som passar för 5 st olika 
-            input fält med olika type attribut. Formuläret ska också innehålla ett fritext fält 
-            samt ha knapp för att skicka formuläret. Minst ett av fälter ska vara ett obligatoriskt fält. 
-            (För att undvika att sidan genererar ett http 405 fel när formuläret skickas ska du i det 
-            här caset ange att metoden GET används i form elementet).
-            
-            Obligatoriska element: form, fieldset, input, textarea, a -->
-
-
-
+    <hr>
+    <footer>
+        &copy; Copyright - Mathilda Hansson 2023
+    </footer>
+    <hr>
 
 </body>
 
