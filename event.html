@@ -11,31 +11,27 @@
 
 <body>
 
-
-    <header>
-        <img src="images/event.png" alt="Event" width="100%">
-    </header>
-
-    <hr>
-
     <!-- MENY -->
-
+    <hr>
     <nav>
         <a href="index.html">Startsida</a> &nbsp;&#124;&nbsp;
         <a href="vastervik.html">Västervik</a> &nbsp;&#124;&nbsp;
         <a href="event.html"><b>Evenemang</b></a> &nbsp;&#124;&nbsp;
         <a href="gallery.html">Galleri</a>
     </nav>
-
     <hr>
 
-    <h1>Evenemang</h1>
+    <!-- SIDHUVUD -->
+    <header>
+        <img src="images/event.png" alt="Event" width="400">
+    </header>
 
     <!-- SIDINNEHÅLL -->
+    <h1>Evenemang</h1>
 
     <h2>Sälsafari i Västerviks skärgård</h2>
 
-    <img src="images/seal.jpeg" alt="Säl i vattnet, bildens upphovsperson: Daniel Johansson" width="100%">
+    <img src="images/seal.jpeg" alt="Säl i vattnet, bildens upphovsperson: Daniel Johansson" width="400">
     <br>
     <i><b>Foto:</b> &copy; Daniel Johansson - "Säl i vattnet"</i>
 
@@ -51,7 +47,8 @@
         är vår största örn, med ett vingspann på 2,5 meter."
     </i>
 
-    <br><br>
+    <br>
+    <br>
 
     <b>Läs mer på om sälsafari:</b>
     <a href="https://www.visitsmaland.se/sv/upplevelser/natur-och-aventyr/orn-o-salsafari">Visit Småland's
@@ -59,15 +56,12 @@
 
     <hr>
 
-
-
+    <!-- FORMULÄR -->
 
     <h3>Anmäl dig till sälsafari!</h3>
 
     <!-- "method get" ska undvikas, men kan användas för att testa applikationer -->
     <form action="#" method="get">
-
-
 
         <fieldset>
             <legend>Anmälningsformulär</legend>
@@ -78,14 +72,12 @@
                 <input type="text" name="firstname" id="firstname" required> *
             </p>
 
-
             <!-- EFTERNAMN -->
             <p>
                 <label for="lastname">Efternamn:</label>
                 <br>
                 <input type="text" name="lastname" id="lastname" required> *
             </p>
-
 
             <!-- E-POSTADRESS -->
             <p>
@@ -107,7 +99,7 @@
                 <label for="checkbox">Nej</label>
             </div>
 
-
+            <!-- TEXTRUTA -->
             <p>
                 <b>Övriga upplysningar inför båtturen:</b>
                 <br>
@@ -115,12 +107,13 @@
             </p>
 
 
+            <!-- LISTA PÅ VAL -->
             <p>
                 <b>Klicka i vilken storlek på flytväst du önskar låna.</b>
                 <br>
                 <i>(Har du egen flytväst behöver du inte klicka i något alternativ)</i>
                 <br>
-                <!-- LISTA PÅ VAL -->
+
                 <select name="size" id="size" multiple size="6">
                     <option value="x-small">X-small</option>
                     <option value="small">Small</option>
@@ -138,10 +131,9 @@
                 <input type="range" name="range" id="range">
             </div>
 
-
             <!-- GODKÄNNANDE AV BEHANDLING AV PERSONUPPGIFTER -->
             <p>
-                <label for="checkbok">Jag godkänner att mina personuppgifter behandlas</label>
+                <label for="checkbox">Jag godkänner att mina personuppgifter behandlas</label>
                 <input type="checkbox" name="checkbox" id="checkbox">
             </p>
 
@@ -155,7 +147,6 @@
     </form>
 
     <!-- FOOTER -->
-
     <hr>
     <footer>
         &copy; Copyright - Mathilda Hansson 2023
